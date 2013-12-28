@@ -1,0 +1,30 @@
+{
+    "name": "aascms/mongo",
+    "description": "mongo helper",
+    "version": "0.1-dev",
+    "type": "library",
+    "authors": [
+        {
+            "name": "inpu",
+            "email": "theinpu@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3",
+        "aascms/config": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "aascms\\Mongo": "."
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://composer.bincode.info"
+        }
+    ]
+}
