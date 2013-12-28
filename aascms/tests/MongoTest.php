@@ -21,5 +21,13 @@ class MongoTest extends \PHPUnit_Framework_TestCase {
         $this->assertEquals($testItem, $savedItem);
         $this->assertFalse(!$collection->drop());
     }
+
+    public function testGetDb()
+    {
+        $db = Mongo::getDb();
+        $this->assertInstanceOf('\MongoDB', $db);
+        $namedDb = Mongo::getDb('local');
+        $this->assertInstanceOf('\MongoDB', $namedDb);
+    }
 }
  

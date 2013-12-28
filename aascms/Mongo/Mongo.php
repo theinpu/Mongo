@@ -38,6 +38,21 @@ class Mongo {
         return self::$storedCollections[$collection];
     }
 
+    /**
+     * Get default MongoDB if $name is null, otherwise named MongoDB
+     * @param string $name
+     * @return \MongoDB
+     */
+    public static function getDb($name = null)
+    {
+        self::checkMongo();
+        if(is_null($name)) {
+            return self::$mongoDB;
+        } else {
+            return self::$mongo->selectDB($name);
+        }
+    }
+
     private static function checkMongo()
     {
         $cfg = ConfigManager::get('cfg/mongo.json');
