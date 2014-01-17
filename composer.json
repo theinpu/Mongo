@@ -1,8 +1,10 @@
 {
-    "name": "aascms/mongo",
-    "description": "mongo helper",
+    "name": "bc/mongo",
+    "description": "mongo helper. nuf",
     "version": "0.1.2",
     "type": "library",
+    "homepage": "https://github.com/theinpu/Mongo",
+    "license": "MIT",
     "authors": [
         {
             "name": "inpu",
@@ -11,20 +13,14 @@
     ],
     "require": {
         "php": ">=5.3",
-        "aascms/config": "*"
+        "bc/config": "0.1.4"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
         "psr-0": {
-            "aascms\\Mongo": "."
+            "bc\\Mongo": "."
         }
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://composer.bincode.info"
-        }
-    ]
+    }
 }

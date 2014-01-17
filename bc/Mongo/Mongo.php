@@ -5,9 +5,9 @@
  * Time: 2:26
  */
 
-namespace aascms\Mongo;
+namespace bc\Mongo;
 
-use aascms\Config\ConfigManager;
+use bc\Config\ConfigManager;
 
 class Mongo {
 
@@ -55,7 +55,7 @@ class Mongo {
 
     private static function checkMongo()
     {
-        $cfg = ConfigManager::get('cfg/mongo.json');
+        $cfg = ConfigManager::get('config/mongo.json');
         if (is_null(self::$mongo)) {
             $connectString = 'mongodb://';
             $options = array('connect' => true);

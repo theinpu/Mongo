@@ -5,11 +5,12 @@
  * Time: 7:40
  */
 
-namespace aascms\tests;
+namespace bc\tests;
 
-use aascms\Mongo\Mongo;
+use bc\Mongo\Mongo;
 
-class MongoTest extends \PHPUnit_Framework_TestCase {
+class MongoTest extends \PHPUnit_Framework_TestCase
+{
 
     public function testMongo()
     {
