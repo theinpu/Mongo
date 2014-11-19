@@ -1,7 +1,7 @@
 {
     "name": "bc/mongo",
     "description": "mongo helper. nuf",
-    "version": "0.1.2",
+    "version": "0.1.2.1",
     "type": "library",
     "homepage": "https://github.com/theinpu/Mongo",
     "license": "MIT",
@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.3",
-        "bc/config": "0.1.4"
+        "bc/config": ">=0.1.4"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
